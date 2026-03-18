@@ -300,5 +300,5 @@ curl -sk $BASE/api/logs/ -H "Authorization: Bearer $ADMIN_TOKEN"
 | `08_delete_task.png` | DELETE /api/tasks/:id → 200 Deleted |
 | `09_no_jwt_401.png` | GET /api/tasks/ (ไม่มี JWT) → 401 |
 | `10_logs_api.png` | GET /api/logs/ (admin) → 200 + logs |
-| `11_rate_limit.png` | login ผิดเร็วๆ > 5 ครั้ง/นาที → 429 |
+| `11_rate_limit.png` | login ผิด > 5 ครั้ง/นาที → ส่ง 429 |
 | `12_frontend_screenshot.png` | หน้า Task Board และ Log Dashboard |
